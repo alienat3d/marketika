@@ -1,44 +1,10 @@
-@import "normalize.scss";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "global";
+// ==-=-=-=-=-=-=-=-=-=-=-=-=-==
 
-// === Mixins ===
-@mixin font-lato {
-  font-family: "Lato", sans-serif;
-}
-@mixin montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-// === / Mixins ===
-
-// === Variables ===
-$color-white: #fff;
-// === / Variables ===
-
-// === Common ===
-*{
-  box-sizing: border-box;
-}
-body {
-  @include font-lato;
-}
-
-.section-outer {
-}
-.section-inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-// === / Common ===
-
-// === Common ===
-.section-outer {
-}
-.section-inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-// === / Common ===
-
-// === header ===
+// === HEADER ===
 .section-header {
   color: #fff;
   background: url("../images/bg-header.jpg") no-repeat 50% 50%;
@@ -71,13 +37,16 @@ body {
     flex-shrink: 1;
     padding-top: 35px;
   }
+
   &-content {
     display: flex;
     align-items: center;
     flex-grow: 1;
   }
+
   &-wrapper {
     margin: 0 auto;
+
     &__title,
     &__subtitle {
       text-align: center;
@@ -89,6 +58,7 @@ body {
       line-height: 60px;
       margin-bottom: 18px;
     }
+
     &__subtitle {
       @include montserrat;
 
@@ -98,11 +68,14 @@ body {
       width: 67%;
       margin: 0 auto 43px;
     }
+
     &__form {
       display: flex;
+
       &-input {
         flex: 1;
         padding-right: 40px;
+
         input {
           @include montserrat;
 
@@ -119,10 +92,11 @@ body {
           width: 100%;
 
           &::placeholder {
-          color: $color-white;
+            color: $color-white;
           }
         }
       }
+
       &-button {
         button {
           @include montserrat;
@@ -142,29 +116,80 @@ body {
     }
   }
 }
-// === / header ===
 
-// === promo ===
+// === / HEADER ===
+
+// === PROMO ===
 .section-promo {
+  padding: 120px 0;
+
+  .section-promo-video {
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 112px;
+    display: flex;
+
+    // .section-promo-video__content,
+    // .section-promo-video__video
+    &__content,
+    &__video {
+      flex-basis: 50%;
+    }
+
+    // .section-promo-video__content
+    &__content {
+      padding-right: 96px;
+      font-weight: 700;
+
+      .title {
+        margin-bottom: 58px;
+        font-size: 32px;
+        line-height: 1.4;
+      }
+
+      .description-item {
+        margin-top: 30px;
+      }
+    }
+
+    // .section-promo-video__video
+    &__video {
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .section-promo-ideas {
+    padding-top: 86px;
+    display: flex;
+    text-align: center;
+
+    .description-item+.description-item {
+      margin-left: 40px;
+    }
+  }
 }
-// === / promo ===
+
+// === / PROMO ===
 
 // === founder ===
-.section-founder {
-}
+.section-founder {}
+
 // === / founder ===
 
 // === plans ===
-.section-plans {
-}
+.section-plans {}
+
 // === / plans ===
 
 // === free ===
-.section-free {
-}
+.section-free {}
+
 // === / free ===
 
 // === footer ===
-.section-footer {
-}
+.section-footer {}
+
 // === / footer ===

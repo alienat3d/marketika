@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include font-lato;
+
+  color: $color-title;
+
+  a:focus,
+  input:focus,
+  button:focus {
+    outline: #e4ff83 dotted medium;
+  }
+}
+
+.section-outer {}
+
+.section-inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.description-item {
+  &__icon {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-text;
+  }
+}
