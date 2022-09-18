@@ -369,6 +369,83 @@
 
 // === / FREE ===
 // === FOOTER ===
-.section-footer {}
+.section-footer {
+  padding: 90px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+
+  // .section-footer__logo
+  &__logo {
+    margin-bottom: 54px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  // .section-footer__nav-list
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  // .section-footer__nav-item
+  &__nav-item {
+    margin-bottom: 56px;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  // .section-footer__nav-item+.section-footer__nav-item
+  &__nav-item+&__nav-item {
+    margin-left: 80px;
+  }
+
+  // .section-footer__copyright
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  // .section-footer__copyright-url
+  &__copyright-url {
+    @include font-montserrat;
+
+    padding: 0 1px;
+    margin: 0 7px 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fe985b;
+    border-bottom: 2px dotted $color-text;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $color-accent;
+      border-bottom: 2px dotted $color-accent;
+    }
+  }
+
+  // .section-footer__copyright-list
+  &__copyright-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .section-footer__copyright-list-item
+  &__copyright-list-item {
+    margin-left: 40px;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
 
 // === / FOOTER ===
