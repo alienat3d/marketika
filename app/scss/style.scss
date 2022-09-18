@@ -341,7 +341,31 @@
 
 // === / PLANS ===
 // === FREE ===
-.section-free {}
+
+.section-free {
+  padding: 120px 0;
+  text-align: center;
+  background: linear-gradient(to right, #fe985b, #fe4fa7);
+  color: $color-white;
+
+  // .section-free__title
+  &__title {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1;
+  }
+
+  // .section-free__description
+  &__description {
+    @include font-montserrat;
+
+    margin: 0 auto 60px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 50%;
+  }
+}
 
 // === / FREE ===
 // === FOOTER ===

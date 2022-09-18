@@ -40,7 +40,6 @@ body {
 
   border: none;
   padding: 17px 44px 16px;
-  max-width: 192px;
 }
 
 .btn-secondary {
@@ -48,7 +47,6 @@ body {
 
   border: 1px solid #979797;
   padding: 16px 43px 15px;
-  max-width: 192px;
   background: transparent;
   color: $color-text;
 
@@ -57,4 +55,14 @@ body {
     background: linear-gradient(to bottom, #fe985b, #fe4fa7);
     color: $color-white;
   }
+}
+
+.btn-free {
+  @include button;
+
+  border: none;
+  padding: 16px 43px 15px;
+  background: none;
+  background-color: $color-white;
+  color: $color-text;
 }
