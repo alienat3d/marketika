@@ -1,0 +1,4 @@
+FIXME: Promo video-popup isn't finished.
+
+TODO: Check all the title to check to h1-h4.
+
