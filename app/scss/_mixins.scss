@@ -5,3 +5,22 @@
 @mixin font-montserrat {
   font-family: "Montserrat", sans-serif;
 }
+
+@mixin button {
+  @include font-montserrat;
+
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  border-radius: $border-radius;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: linear-gradient(to right, #fe985b, #fe4fa7);
+  color: $color-white;
+
+  &:hover {
+    background: linear-gradient(to left, #fe985b, #fe4fa7);
+    color: $color-white;
+  }
+}

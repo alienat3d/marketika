@@ -1,20 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   @include font-lato;
 
   color: $color-title;
-
-  a:focus,
-  input:focus,
-  button:focus {
-    outline: #e4ff83 dotted medium;
-  }
 }
-
-.section-outer {}
 
 .section-inner {
   width: 1180px;
@@ -38,5 +26,35 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: $color-text;
+  }
+}
+
+.btn-start {
+  @include button;
+
+  padding: 16px 20px;
+}
+
+.btn-main {
+  @include button;
+
+  border: none;
+  padding: 17px 44px 16px;
+  max-width: 192px;
+}
+
+.btn-secondary {
+  @include button;
+
+  border: 1px solid #979797;
+  padding: 16px 43px 15px;
+  max-width: 192px;
+  background: transparent;
+  color: $color-text;
+
+  &:hover {
+    border: none;
+    background: linear-gradient(to bottom, #fe985b, #fe4fa7);
+    color: $color-white;
   }
 }
