@@ -4,8 +4,12 @@ body {
   color: $color-title;
 }
 
+.section-outer {
+  padding: 0 20px;
+}
+
 .section-inner {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -49,11 +53,12 @@ body {
   padding: 16px 43px 15px;
   background: transparent;
   color: $color-text;
+  transition: $transition-fast;
 
   &:hover {
-    border: none;
-    background: linear-gradient(to bottom, #fe985b, #fe4fa7);
-    color: $color-white;
+    background: transparent;
+    border: 1px solid $color-accent;
+    color: $color-accent;
   }
 }
 
@@ -65,4 +70,10 @@ body {
   background: none;
   background-color: $color-white;
   color: $color-text;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 2px #fe985b;
+    background: $color-white;
+    color: $color-accent;
+  }
 }
