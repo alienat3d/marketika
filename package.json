@@ -1,31 +1,16 @@
 {
-  "name": "marketika",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alienat3d/marketika.git"
-  },
-  "author": "Al Tsaplin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alienat3d/marketika/issues"
-  },
-  "homepage": "https://github.com/alienat3d/marketika#readme",
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "7.1",
     "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.69.7",
-    "normalize.css": "^8.0.1"
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "7.1",
+    "jquery": "^3.7.1"
   }
 }
